@@ -25,12 +25,97 @@ a {
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 5fr;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
   gap: 4px;
 }
 
 
+
+/* SIDEBAR */
 .sidebar {
   background-color: #0ea5e9;
+  color: #fff;
   grid-row: span 2;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-title img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: invert(100%);
+}
+
+.sidebar-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.sidebar li.home::before {
+  background-image: url('./img/home.svg');
+}
+
+.sidebar li.profile::before {
+  background-image: url('./img/profile.svg');
+}
+
+.sidebar li.messages::before {
+  background-image: url('./img/messages.svg');
+}
+
+.sidebar li.history::before {
+  background-image: url('./img/history.svg');
+}
+
+.sidebar li.tasks::before {
+  background-image: url('./img/tasks.svg');
+}
+
+.sidebar li.communities::before {
+  background-image: url('./img/communities.svg');
+}
+
+.sidebar li.settings::before {
+  background-image: url('./img/settings.svg');
+}
+
+.sidebar li.support::before {
+  background-image: url('./img/support.svg');
+}
+
+.sidebar li.privacy::before {
+  background-image: url('./img/privacy.svg');
+}
+
+
+.sidebar li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: invert(100%);
 }
