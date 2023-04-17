@@ -254,10 +254,17 @@ a {
   font-weight: 700;
 }
 
+
+
 /* PROJECTS */
 
 .main {
   padding: 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 30px 20px 40px 20px;
+  max-height: 100%;
 }
 
 .project-display {
@@ -270,7 +277,7 @@ a {
 .project-section-heading {
   font-weight: 500;
   font-size: 19px;
-  margin: 10px 10px 0px 15px;
+  padding-left: 15px;
 }
 
 .projects-container {
@@ -281,6 +288,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 1rem;
+  gap: 10px;
 }
 
 .project {
@@ -332,5 +340,44 @@ a {
 .project-interact-container ul li {
   list-style: none;
   margin-left: 20px;
+}
+
+
+
+/* ANNOUNCEMENTS */
+
+.announcements-section {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-bottom: 10px;
+}
+
+.announcements-section-heading {
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.announcements-container {
+  background-color: white;
+  box-shadow: 0px 2px 3px rgb(175, 175, 175);
+  padding: 20px 20px 20px 25px;
+  border-radius: 5px;
+  min-width: 231px;
+}
+
+.announcement-heading {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.announcement-description {
+  font-size: 11px;
+  color: rgb(88, 88, 88);
+}
+
+hr {
+  margin: 15px 0 15px 0;
 }
 
