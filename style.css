@@ -45,31 +45,33 @@ a {
 .sidebar-title {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .sidebar-title img {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   margin-right: 10px;
   filter: invert(100%);
 }
 
 .sidebar-title h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .sidebar ul {
   list-style: none;
+  padding-left: 10px;
 }
 
 .sidebar li {
   position: relative;
   padding-left: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 .sidebar li.home::before {
@@ -129,7 +131,9 @@ a {
   padding: 1rem;
   display: grid;
   grid-template-rows: 0.5fr 2.0fr;
+  font-weight: 500;
 }
+
 
 .header-top {
   display: grid;
@@ -144,28 +148,6 @@ a {
   /* border-radius: 15px; */
   /* padding: 0.5rem; */
 }
-
-.login-panel {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  gap: 30px;
-}
-
-.login-panel img {
-  width: 20px;
-  height: 20px;
-}
-
-.login-panel button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 20px;
-  color: #0ea5e9;
-}
-
 
 .search-container input[type="text"] {
   padding: 5px;
@@ -194,5 +176,26 @@ a {
 }
 
 .fa-search {
+  font-size: 16px;
+}
+
+.login-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.login-panel img {
+  width: 20px;
+  height: 20px;
+}
+
+.login-panel button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
   font-size: 20px;
+  color: #0ea5e9;
 }
