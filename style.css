@@ -72,6 +72,11 @@ a {
   cursor: pointer;
 }
 
+.sidebar ul li:hover {
+  transform: scale(1.1);
+  transform: translateX(-2px);
+}
+
 .sidebar li.home::before {
   background-image: url('./img/home.svg');
 }
@@ -328,3 +333,4 @@ a {
   list-style: none;
   margin-left: 20px;
 }
+
