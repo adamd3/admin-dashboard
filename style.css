@@ -20,13 +20,11 @@ a {
   color: #333;
 }
 
-
 .container {
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr 3fr;
-  gap: 4px;
 }
 
 
@@ -123,30 +121,33 @@ a {
 }
 
 
+
 /* HEADER */
+
 .header {
   background-color: #fff;
   color: #000000;
-  /* grid-row: span 2; */
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   display: grid;
   grid-template-rows: 0.5fr 2.0fr;
   font-weight: 500;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
 }
 
-
-.header-top {
-  display: grid;
-  grid-template-columns: 0.9fr 0.1fr;
+.header-top, .header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem;
 }
 
 .search-container {
   display: flex;
   align-items: center;
   gap: 15px;
-  /* justify-content: space-between; */
-  /* border-radius: 15px; */
-  /* padding: 0.5rem; */
+  margin-right: 100px;
 }
 
 .search-container input[type="text"] {
@@ -158,8 +159,6 @@ a {
   margin-right: 10px;
   border-radius: 25px;
   outline: none;
-  /* flex-grow: 1; */
-  /* padding: 0.5rem; */
 }
 
 .search-container button {
@@ -180,10 +179,11 @@ a {
 }
 
 .login-panel {
-  display: grid;
+  display: inline-flex;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  cursor: pointer;
 }
 
 .login-panel img {
@@ -195,7 +195,61 @@ a {
   border: none;
   outline: none;
   background-color: transparent;
-  cursor: pointer;
   font-size: 20px;
   color: #0ea5e9;
+  cursor: pointer;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.greeting-image {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: auto;
+  z-index: 1;
+}
+
+.greeting-image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #facc15;
+  border-radius: 50%;
+  width: 70px; 
+  height: 70px; 
+  z-index: -1;
+}
+
+.header-bottom .button {
+  background-color: #0ea5e9;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.header-bottom .button:hover {
+  background-color: #facc15;
+  color: #fff;
+}
+
+.header-bottom .button {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 2px #888;
+}
+
+.header-bottom .new {
+  margin-right: 10px;
+}
+
+.header-bottom .share {
+  margin-left: 10px;
 }
