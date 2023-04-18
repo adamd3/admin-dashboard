@@ -401,6 +401,11 @@ hr {
   cursor: pointer;
 }
 
+.trending-profile:hover {
+  transform: scale(1.1);
+  transform: translateX(-2px);
+}
+
 .trending-profile img {
   margin-right: 10px;
 }
